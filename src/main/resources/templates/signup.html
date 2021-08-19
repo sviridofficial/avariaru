@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="signinstyle.css">
+    <link rel="stylesheet" href="style.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="center">
+      <h1>Зарегистрироваться</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Логин</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Пароль</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Город</label>
+        </div>
+        <input type="submit" value="Зарегистрироваться">
+        <div class="signup_link">
+          Уже есть аккаунт? <a th:href="@{/signin}">Авторизоваться</a>
+        </div>
+      </form>
+      <p class="homepage"><a th:href="@{/mainpage}"><img  src="img\house.svg" width="70px"/></a></p>
+    </div>
+
+  </body>
+</html>
