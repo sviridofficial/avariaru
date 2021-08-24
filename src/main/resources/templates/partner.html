@@ -1,128 +1,143 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-      <!--fontawesome-->
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-          <link rel="stylesheet" href="partnerstyle.css">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="partnerstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
     <title>Авария.ру</title>
-  </head>
-  
-  
-  <body>
+</head>
+
+
+<body>
 
 <header class="header">
-  <div class="header-inner">
-    <div class="container-fluid px-lg-5">
-      <nav class="navbar navbar-expand-lg my-navbar">
-  <a class="navbar-brand" th:href="@{/partnership}"><span class="logo">
+    <div class="header-inner">
+        <div class="container-fluid px-lg-5">
+            <nav class="navbar navbar-expand-lg my-navbar">
+                <a class="navbar-brand" th:href="@{/partnership}"><span class="logo">
     <img src="img\car-crash.svg" class="img-fluid" style="width:60px; margin:-6px 10px 0px 0px;" th:href="@{/mainpage}">Авария.ру</span>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
-  </button>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+                </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto">
-      <li class="nav-item active">
-        <a class="nav-link" th:href="@{/mainpage}">Главная<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" th:href="@{/news}">Новости</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" th:href="@{/about}">Контакты</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" th:href="@{/partnership}">Сотруднечество</a>
-      </li>
-   
-    </ul>
-      <form class="form-inline my-2 my-lg-0" th:action="@{/signin}">
-          <button class="header-btn my-2 my-sm-0" type="submit">Войти в аккаунт</button>
-    </form>
-  </div>
-</nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" th:href="@{/mainpage}">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/news}">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/about}">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/partnership}">Сотруднечество</a>
+                        </li>
 
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" th:action="@{/signin}">
+                        <button class="header-btn my-2 my-sm-0" type="submit">Войти в аккаунт</button>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
     </div>
-  </div>
 
 
 </header>
 
 <section class="content-banner">
 
-  <div class="container">
-<div class="row d-flex justify-content-center">
-  <div class="col-md-12">
-    <div class="banner-con text-center">
-      <p class="first-title">Сотруднечество</p>
-      <p class="banner-des">Если у Вас есть идеи о сотрудничестве, предложения по рекламе или просто Вы хотите поддержать проект, то Вы можете оставить заявку.</p>
-      
-     
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="banner-con text-center">
+                    <p class="first-title">Сотруднечество</p>
+                    <p class="banner-des">Если у Вас есть идеи о сотрудничестве, предложения по рекламе или просто Вы
+                        хотите поддержать проект, то Вы можете оставить заявку.</p>
+
+
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</div>
 </section>
 
 <div class="main-content">
-  <section>
-     <div class="container">
-       
-    <div class = "partnerspam">
-      <h2 class="h_zagolovok">Заявка</h2>
-      <div class="partnerspam2">
-        <form action="/mailsender" method="post">
-          <p>Почта</p>
-          <p><input placeholder="Ваша почта..." name="mail" class="xxx"></p>
-          <p>Комментарий</p>
-          <textarea class="xxx" placeholder="Напишите Ваше предложение..." name="comment" cols="40" rows="3"></textarea>
-          <p><input type="submit" class="btnz" value="Отправить"></p>
-         </form>
-      </div>
-    </div>  
-    </div>
-  </section>
- 
-   </div>
-   <footer>
-     <div class="footer">
-    <div class="container">
-    <h2 class="h2footer">&#169;Томский Политехнический Университет</h2>
-    <h2 class="h2footer">Свиридов Константин Андреевич 8К93</h2>
-    <p>
-    <a href="https://vk.com/sviridov_kkk" target="_blank"><img class="note2" src="img\icons8-вконтакте-70.png"></a>
-    <a href="https://www.instagram.com/sviridov_kkk" target="_blank"><img class="note2" src="img\icons8-instagram-70.png"></a>
-    <a href="https://www.youtube.com/channel/UCBg3Gw-HrOHq6EPrh2aXi-g" target="_blank"><img class="note2" src="img\icons8-youtube-play-70.png"></a>
-    <a  target="_blank" href="https://t.me/KKKASTETTT"><img class="note2" src="img\icons8-телеграмма-app-70.png"></a>
-    </p>
-  </div>
+    <section>
+        <div class="container">
+
+            <div class="partnerspam">
+                <h2 class="h_zagolovok">Заявка</h2>
+                <div class="partnerspam2">
+                    <form action="/mailsender" method="post">
+                        <p>Почта</p>
+                        <p><input placeholder="Ваша почта..." name="mail" class="xxx"></p>
+                        <p>Комментарий</p>
+                        <textarea class="xxx" placeholder="Напишите Ваше предложение..." name="comment" cols="40"
+                                  rows="3"></textarea>
+                        <p><input type="submit" class="btnz" value="Отправить"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
-    </footer>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <h2 class="h2footer">&#169;Томский Политехнический Университет</h2>
+            <h2 class="h2footer">Свиридов Константин Андреевич 8К93</h2>
+            <p>
+                <a href="https://vk.com/sviridov_kkk" target="_blank"><img class="note2"
+                                                                           src="img\icons8-вконтакте-70.png"></a>
+                <a href="https://www.instagram.com/sviridov_kkk" target="_blank"><img class="note2"
+                                                                                      src="img\icons8-instagram-70.png"></a>
+                <a href="https://www.youtube.com/channel/UCBg3Gw-HrOHq6EPrh2aXi-g" target="_blank"><img class="note2"
+                                                                                                        src="img\icons8-youtube-play-70.png"></a>
+                <a target="_blank" href="https://t.me/KKKASTETTT"><img class="note2"
+                                                                       src="img\icons8-телеграмма-app-70.png"></a>
+            </p>
+        </div>
+    </div>
+</footer>
 <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-  <script type="text/javascript">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
@@ -133,6 +148,7 @@
         }
       });
     });
-  </script>
- </body>
+
+</script>
+</body>
 </html>
