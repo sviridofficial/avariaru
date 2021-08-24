@@ -42,6 +42,11 @@ public class MainControlller {
         return "signin";
     }
 
+    @GetMapping("/ifregistr")
+    public String ifregistr() {
+        return "ifauth";
+    }
+
 
     @RequestMapping(value = "/mailsender", method = RequestMethod.POST)
     public String sendMail(@RequestParam String mail, @RequestParam String comment) {
