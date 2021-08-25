@@ -48,7 +48,7 @@ public class MainControlller {
     }
 
 
-    @RequestMapping(value = "/mailsender", method = RequestMethod.POST)
+    @PostMapping(value = "/mailsender")
     public String sendMail(@RequestParam String mail, @RequestParam String comment) {
         notificationService.sendNotification(mail,comment);
         return "redirect:/partnership";
