@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import com.example.demo.models.Mails;
+import com.example.demo.repo.MailsDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
@@ -15,6 +17,9 @@ public class NotificationService {
         this.javaMailSender = javaMailSender;
     }
 
+    @Autowired
+    private MailsDAO mailsDAO;
+
     public void sendNotification(String sendTo, String comment) throws MailException {
 
 //Благодарим юзера за фидбек
@@ -24,6 +29,12 @@ public class NotificationService {
         simpleMailMessage.setSubject("Avaria.ru");
         simpleMailMessage.setText("Спасибо, что делаете наш сервис лучше!");
         javaMailSender.send(simpleMailMessage);
+        try {
+            mailsDAO.save(new Mails(sendTo));
+        }
+        catch (Exception e){
+            System.out.println("Такая почта уже есть в базе данных!");
+        }
 
 //Отправляем его комментарий и его почту на свою почту
         SimpleMailMessage feedback = new SimpleMailMessage();
