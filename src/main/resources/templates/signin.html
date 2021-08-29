@@ -27,10 +27,12 @@
             <span></span>
             <label>Пароль</label>
         </div>
+        <div class="alert" th:if="${errorMessage}" th:text="${errorMessage}"></div>
         <input type="submit" value="Войти">
         <div class="signup_link">
             Еще не зарегистрировались? <a th:href="@{/signup}">Создать аккаунт</a>
         </div>
+
     </form>
     <p class="homepage"><a th:href="@{/mainpage}"><img src="img\house.svg" width="70px"/></a></p>
 </div>
