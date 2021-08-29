@@ -24,4 +24,7 @@ public class Users {
         this.loginUser = loginUser;
         this.passUser = passUser;
     }
+    public Users(){
+
+    }
 }
