@@ -28,6 +28,7 @@
             <label>Пароль</label>
         </div>
         <div class="alert" th:if="${errorMessage}" th:text="${errorMessage}"></div>
+        <div class="alert_s" th:if="${successRegistration}" th:text="${successRegistration}"></div>
         <input type="submit" value="Войти">
         <div class="signup_link">
             Еще не зарегистрировались? <a th:href="@{/signup}">Создать аккаунт</a>

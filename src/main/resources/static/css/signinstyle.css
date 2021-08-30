@@ -123,3 +123,10 @@ color:red;
 font-size:11px;
 margin-bottom:10px;
 }
+
+.alert_s{
+  text-align:center;
+  color:green;
+  font-size:11px;
+  margin-bottom:10px;
+}

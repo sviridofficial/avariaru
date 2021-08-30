@@ -13,11 +13,9 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 public class AuthorizationController {
-
-
     @GetMapping("/login-error")
     public String login(HttpServletRequest request, Model model) {
-        String errorMessage = "Пользователь с такой электронной почтой или паролем не найден";
+        String errorMessage = "Пользователь с таким логином или паролем не найден";
         model.addAttribute("errorMessage", errorMessage);
         return "signin";
     }

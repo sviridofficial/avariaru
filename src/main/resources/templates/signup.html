@@ -18,20 +18,21 @@
     <h1>Зарегистрироваться</h1>
     <form method="post">
         <div class="txt_field">
-            <input type="text" required>
+            <input type="text" name="r_login" required>
             <span></span>
             <label>Логин</label>
         </div>
         <div class="txt_field">
-            <input type="password" required>
+            <input type="password" name="r_password" required>
             <span></span>
             <label>Пароль</label>
         </div>
         <div class="txt_field">
-            <input type="text" required>
+            <input type="text" name="r_mail" required>
             <span></span>
             <label>Электронная почта</label>
         </div>
+        <div class="alert" th:if="${failedRegistration}" th:text="${failedRegistration}"></div>
         <input type="submit" value="Зарегистрироваться">
         <div class="signup_link">
             Уже есть аккаунт? <a th:href="@{/signin}">Авторизоваться</a>

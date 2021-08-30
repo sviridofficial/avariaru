@@ -20,6 +20,9 @@ public class Users {
     @Column(name = "pass", unique = true)
     private String passUser;
 
+    @Column(name="user_mail", unique = true)
+    private String userMail;
+
     public Users(String loginUser, String passUser) {
         this.loginUser = loginUser;
         this.passUser = passUser;
