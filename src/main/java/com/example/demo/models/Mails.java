@@ -23,4 +23,8 @@ public class Mails {
         this.mailAddress = mailAddress;
     }
 
+
+    public Mails() {
+
+    }
 }
